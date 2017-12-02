@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="512.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.pbo.InterfaceTransaksiController">
+   <children>
+      <TableView fx:id="tabel" layoutX="83.0" layoutY="80.0" prefHeight="353.0" prefWidth="595.0">
+         <columns>
+            <TableColumn fx:id="notacol" prefWidth="202.0" text="No Nota" />
+            <TableColumn fx:id="namacol" prefWidth="202.0" text="Nama Pembeli" />
+            <TableColumn fx:id="totalcol" minWidth="0.0" prefWidth="189.0" text="Total Belanja" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="360.0" layoutY="451.0" onAction="#refresh" text="Refresh" />
+   </children>
+</AnchorPane>

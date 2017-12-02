@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="512.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.pbo.Halaman1Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="170.0" text="Selamat Datang">
+         <font>
+            <Font name="NexaBold" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="262.0" text="Di iCashier">
+         <font>
+            <Font name="Century Gothic Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="371.0" layoutY="320.0" onAction="#logout" text="Logout" />
+   </children>
+</AnchorPane>

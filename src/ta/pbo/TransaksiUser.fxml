@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="512.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.pbo.TransaksiUserController">
+   <children>
+      <TableView fx:id="tabel" layoutX="33.0" layoutY="67.0" prefHeight="378.0" prefWidth="423.0">
+        <columns>
+          <TableColumn fx:id="kodecol" prefWidth="135.0" text="Kode Barang" />
+          <TableColumn fx:id="namacol" prefWidth="153.0" text="Nama Barang" />
+            <TableColumn fx:id="hargacol" prefWidth="134.0" text="Harga" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="kodebar" layoutX="505.0" layoutY="231.0" maxWidth="222.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" promptText="Kode Barang" />
+      <JFXButton layoutX="597.0" layoutY="272.0" onAction="#beli" text="Cari" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="pane_home" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="512.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.pbo.DatatransaksiController">
+   <children>
+      <JFXTextField fx:id="nota" layoutX="470.0" layoutY="56.0" maxWidth="312.0" minWidth="219.0" prefHeight="31.0" prefWidth="225.0" promptText="No Nota" />
+      <JFXTextField fx:id="nama" layoutX="471.0" layoutY="87.0" maxWidth="318.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" promptText="Nama pembeli" />
+      <TableView fx:id="tabel" layoutX="24.0" layoutY="67.0" prefHeight="378.0" prefWidth="423.0">
+         <columns>
+            <TableColumn fx:id="kodecol" prefWidth="135.0" text="Kode Barang" />
+            <TableColumn fx:id="namacol" prefWidth="153.0" text="Nama Barang" />
+            <TableColumn fx:id="hargacol" prefWidth="134.0" text="Harga" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="kodebar" layoutX="470.0" layoutY="118.0" maxWidth="225.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" promptText="Kode Barang" />
+      <JFXTextField fx:id="namabar" layoutX="470.0" layoutY="149.0" maxWidth="225.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" promptText="Nama Barang" />
+      <JFXTextArea fx:id="hasil" layoutX="471.0" layoutY="283.0" maxWidth="225.0" minWidth="225.0" prefHeight="162.0" prefWidth="225.0" promptText="Nota" />
+      <JFXTextField fx:id="harga" layoutX="470.0" layoutY="180.0" maxWidth="225.0" minWidth="225.0" prefHeight="31.0" prefWidth="225.0" promptText="Harga" />
+      <JFXButton layoutX="644.0" layoutY="244.0" onAction="#proses" text="Proses" />
+   </children>
+</AnchorPane>
